@@ -1,9 +1,12 @@
+/* REGRA PARA GERAL */ 
 * {
     margin:0;
     padding: 0;
     box-sizing: border-box;
     scroll-behavior: smooth;
 }
+
+/* HEADER */
 .navbar {
     width: 100%;
     position: fixed;
@@ -60,15 +63,6 @@ nav ul li a:hover {
     background-color: firebrick;
 }
 
-/* .zero-article {
-    display: flex;
-    justify-content: space-around;
-    flex-flow: row wrap;
-    border-style: solid;
-    border-radius: 110px;
-    background-color: thistle;
-} */
-
 .round-image {
     border-radius: 999rem;
     height: 200px;
@@ -78,7 +72,12 @@ nav ul li a:hover {
 .text-personal {
     display: flex;
     flex-direction: column;
-    width: 73%;
+}
+
+/* MAIN */
+
+article {
+    margin: 100px 0px;
 }
 
 .first-section {
@@ -126,6 +125,8 @@ nav ul li a:hover {
     margin: 18px;
 }
 
+/* FOOTER */
+
 footer {
     background-color: #222331;
     color: white;
@@ -162,16 +163,16 @@ footer {
     height: 25px;
 }
 
- /* ESTILIZAÇÃO DAS LETRAS */
-
  h1 {
-    font-family: 'Bree Serif', serif;
+    font-family: 'Fredoka One', cursive;
     font-size: 46px;
+    color: white;
  }
 
  h2 {
-    font-family: 'Bree Serif', serif;
+    font-family: 'Fredoka One', cursive;
     font-size: 26px;
+    color: white;
  }
 
  h3 {
@@ -191,15 +192,9 @@ h4 {
 h6 {
     font-family: 'Patrick Hand', cursive;
     font-size: 20px;
-}
+    color: white;
 
 p {
     text-align: center;
     color:black;
 }
-
-/* TESTAR FONTTES ABAIXO
-font-family: 'Permanent Marker', cursive;
-font-family: 'Fredoka One', cursive;
-font-family: 'Baloo Bhai', cursive;
-*/
