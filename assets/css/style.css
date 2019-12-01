@@ -78,6 +78,7 @@ nav ul li a:hover {
 
 article {
     margin: 100px 0px;
+    /* border: 1px solid #222331; */
 }
 
 .first-section {
@@ -123,6 +124,14 @@ article {
 
 .card {
     margin: 18px;
+}
+
+.card:hover {
+    border: 1px solid #f70303;
+}
+
+.card-img-top {
+    border: 1px solid rgb(0, 1, 2);
 }
 
 /* FOOTER */
@@ -193,8 +202,9 @@ h6 {
     font-family: 'Patrick Hand', cursive;
     font-size: 20px;
     color: white;
+}
 
 p {
-    text-align: center;
-    color:black;
+    font-family: 'Patrick Hand', cursive;
+    font-size: 17px;
 }
