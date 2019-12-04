@@ -162,6 +162,11 @@ footer {
 
 }
 
+.dark-footer {
+    background-color: #171824;
+    padding: 25px;
+}
+
 .copyright {
     display: flex;
     justify-content: center;
