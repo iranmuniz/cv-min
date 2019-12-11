@@ -1,4 +1,4 @@
-/* REGRA PARA GERAL */ 
+/* REGRA GLOBAL */ 
 * {
     margin:0;
     padding: 0;
@@ -6,7 +6,14 @@
     scroll-behavior: smooth;
 }
 
+.position-article {
+    display: flex;
+    justify-content: space-around;
+    flex-flow: row wrap;
+}
+
 /* HEADER */
+
 .navbar {
     width: 100%;
     position: fixed;
@@ -60,7 +67,8 @@ nav ul li a:hover {
 }
 
 .zero-section {
-    background-color: firebrick;
+    background-color: rgb(185, 48, 48);
+    padding: 150px 0px;
 }
 
 .round-image {
@@ -74,38 +82,64 @@ nav ul li a:hover {
     flex-direction: column;
 }
 
-/* MAIN */
-
-article {
-    margin: 100px 0px;
-    /* border: 1px solid #222331; */
+.name-job {
+    display: flex;
+    justify-content: center;
 }
+
+.description {
+    padding: 30px;
+}
+
+.border-card-zero-section {
+    border: 1px solid #dadce0;
+    margin: 0px 60px;
+    border-radius: 8px;
+    background-color: firebrick;
+}
+
+/* MAIN */
 
 .first-section {
     background-color: teal;
+    padding: 150px 0px;
 }
 
-.position-article {
-    display: flex;
-    justify-content: space-around;
-    flex-flow: row wrap;
-    padding: 150px 0px;
+.border-card-primary-section {
+    border: 1px solid #dadce0;
+    margin: 10px;
+    border-radius: 8px;
+    background-color: lightseagreen;
+    padding: 40px;
+    /* width: 500px; */
 }
 
 .second-section {
     background-color: chocolate;
+    padding: 150px 0px;
+}
+
+.border-card-second-section {
+    border: 1px solid #dadce0;
+    margin: 10px;
+    border-radius: 8px;
+    background-color: darkorange;
+    padding: 40px;
+    /* width: 42%; */
 }
 
 .third-section {
     background-color: seagreen;
+    padding: 150px 0px;
 }
 
 .fourth-section {
-    background-color: rebeccapurple;    
+    background-color: rebeccapurple;
+    padding: 150px 0px;   
 }
 
 .fifth-section {
-    background-color: rgb(36, 156, 177);  
+    background-color: rgb(36, 156, 177);
 }
 
 .position-article-card {
