@@ -203,7 +203,7 @@ footer {
     padding: 50px 0px;
 }
 
-.container-community {
+.community {
     display: flex;
     flex-flow: column;
     text-align: center;
@@ -230,6 +230,15 @@ footer {
 .img-cv {
     height: 100px;
 }
+
+.img-trampos {
+    border-radius: 999rem;
+    height: 101px;
+}
+
+/* .content-info {
+    
+} */
 
 .content-letters {
     display: flex;
@@ -373,7 +382,20 @@ p {
         padding: 80px 0px;
     }
 
-    .img-cv {
-        margin: 0px 189px;
+    .community {
+        padding: 0px 0px 90px;
+    }
+
+    .content-letters {
+        margin: 0px 195px;
+        padding: 0px 0px 90px;
+    }
+
+    .content-info {
+        padding: 0px 0px 90px;
+    }
+
+    nav ul li a {
+        font-size: 9px;
     }
 }
