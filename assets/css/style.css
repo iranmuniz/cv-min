@@ -30,7 +30,7 @@ body {
     border-radius: 999rem;
     height: 200px;
     margin: 30px 70px;
-    box-shadow: 0 10px 29px 0 rgba(255, 17, 0, 0.904);
+    /* box-shadow: 0 10px 29px 0 rgba(255, 17, 0, 0.904); */
 }
 
 .text-personal {
@@ -83,6 +83,7 @@ body {
 .border-card-primary-section:hover {
     background-color: white;
     color: black;
+    transition: background-color 1s, color 1s;
 }
 
 .border-img-school {
@@ -140,6 +141,18 @@ body {
     border-radius: 8px;
 }
 
+/* .third-section {
+
+} */
+
+.skills-star-box {
+    display: flex;
+}
+
+.space-box-star {
+    margin: 0px 10px;
+}
+
 .black-font {
     color: black;
 }
@@ -156,6 +169,10 @@ body {
     background-color: rebeccapurple;
     padding: 150px 0px;
     border-radius: 60px 60px 0 0;
+}
+
+.img-construction {
+    height: 124px;
 }
 
 .position-article-card {
@@ -396,6 +413,10 @@ p {
     }
 
     nav ul li a {
+        font-size: 9px;
+    }
+
+    .copyright {
         font-size: 9px;
     }
 }
