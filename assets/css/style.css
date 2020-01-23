@@ -33,6 +33,13 @@ body {
     /* box-shadow: 0 10px 29px 0 rgba(255, 17, 0, 0.904); */
 }
 
+.round-image:hover {
+    /* border: 2px solid #f70303; */
+    -moz-transform: scale(1.1);
+	-webkit-transform: scale(1.1);
+	transform: scale(1.1);
+}
+
 .text-personal {
     display: flex;
     flex-direction: column;
@@ -194,7 +201,12 @@ body {
 }
 
 .card:hover {
-    border: 1px solid #f70303;
+    /* border: 1px solid #f70303; */
+    -moz-transform: scale(1.1);
+	-webkit-transform: scale(1.1);
+    transform: scale(1.1);
+    transition: 1s;
+    font-size: 10px;
 }
 
 .card-img-top {
@@ -304,6 +316,8 @@ nav ul li a:hover {
 .logo-link-footer {
     height: 20px;
     transition: all 0.8s ease-in-out;
+    /* filter: grayscale(100%); */
+    /* background-color: white; */
 }
 
 .logo-link-footer:hover {
