@@ -1,10 +1,4 @@
 /* GLOBAL */ 
-* {
-    margin:0;
-    padding: 0;
-    box-sizing: border-box;
-    scroll-behavior: smooth;
-}
 
 .position-article {
     display: flex;
@@ -154,10 +148,16 @@ body {
 
 .skills-star-box {
     display: flex;
+    justify-content: space-around;
 }
 
 .space-box-star {
     margin: 0px 10px;
+}
+
+.star {
+    height: 20px;
+    margin: -5px 0px 0px;
 }
 
 .black-font {
