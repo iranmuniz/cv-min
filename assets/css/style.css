@@ -17,7 +17,7 @@ body {
 }
 
 .zero-section {
-    padding: 80px 0px 100px;
+    padding: 70px 0px 100px;
 }
 
 .round-image {
@@ -149,6 +149,12 @@ body {
 .skills-star-box {
     display: flex;
     justify-content: space-around;
+}
+
+.box-abiliity {
+    display: flex;
+    justify-content: space-around;
+    flex-flow: row wrap;
 }
 
 .space-box-star {
