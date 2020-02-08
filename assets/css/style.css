@@ -12,12 +12,25 @@ body {
 
 /* HEADER */
 
+.position-header {
+    display: flex;
+    justify-content: center;
+    flex-flow: column;
+    color: white;
+}
+
 .zero-section, .first-section {
     background-color: teal;
 }
 
 .zero-section {
     padding: 70px 0px 100px;
+}
+
+.position-personal {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .round-image {
@@ -34,11 +47,6 @@ body {
 	transform: scale(1.1);
 }
 
-.text-personal {
-    display: flex;
-    flex-direction: column;
-}
-
 .name-job {
     display: flex;
     justify-content: center;
@@ -49,13 +57,15 @@ body {
 }
 
 .border-card-zero-section {
-    /* border: 1px solid #dadce0; */
     border-radius: 8px;
 }
 
 .border-card-zero-section {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
     margin: 0px 60px;
-    /* background-color: white; */
 }
 
 /* MAIN */
@@ -146,6 +156,10 @@ body {
 
 } */
 
+.skills {
+    margin: 120px 0px;
+}
+
 .skills-star-box {
     display: flex;
     justify-content: space-around;
@@ -178,10 +192,16 @@ body {
     padding: 150px 0px;
 }
 
+/* AQUI FICA OS PROJETOS */
+
 .fourth-section {
     background-color: rebeccapurple;
     padding: 150px 0px;
-    border-radius: 60px 60px 0 0;
+    border-radius: 0px 600px 0 0;
+}
+
+.github-project {
+    height: 200px;
 }
 
 .img-construction {
