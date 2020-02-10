@@ -197,11 +197,34 @@ body {
 .fourth-section {
     background-color: rebeccapurple;
     padding: 150px 0px;
-    border-radius: 0px 600px 0 0;
+    border-radius: 0px 600px 600px 0;
+}
+
+.content-project {
+    color: white;
+    margin: 50px 0px 0px;
 }
 
 .github-project {
     height: 200px;
+}
+
+.github-project:hover {
+    -moz-transform: scale(1.1);
+    -webkit-transform: scale(0.1);
+    transform: scale(0.9);
+    transition: 1s;
+}
+
+.wordpress-project {
+    height: 200px;
+}
+
+.wordpress-project:hover {
+    -moz-transform: scale(1.1);
+    -webkit-transform: scale(0.1);
+    transform: scale(0.9);
+    transition: 1s;
 }
 
 .img-construction {
@@ -446,6 +469,10 @@ p {
     .content-letters {
         margin: 0px 195px;
         padding: 0px 0px 90px;
+    }
+
+    .fourth-section {
+        border-radius: 0px 300px 300px 0; 
     }
 
     .content-info {
