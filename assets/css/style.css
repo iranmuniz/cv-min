@@ -151,10 +151,19 @@ body {
     border: 1px solid #dadce0;
     border-radius: 8px;
 }
+.third-section {
+    padding: 150px 0px 150px;
+}
 
-/* .third-section {
-
-} */
+.border-card-third-section{
+    margin: 10px;
+    background-color: white;
+    padding: 40px;
+    width: 500px;
+    box-shadow: 0 10px 29px 0 rgba(68, 88, 144, 0.5);
+    border: 1px solid #dadce0;
+    border-radius: 8px;
+}
 
 .skills {
     margin: 120px 0px;
@@ -188,9 +197,6 @@ body {
     color: white;
 }
 
-.third-section {
-    padding: 150px 0px;
-}
 
 /* AQUI FICA OS PROJETOS */
 
@@ -198,6 +204,7 @@ body {
     background-color: rebeccapurple;
     padding: 150px 0px;
     border-radius: 0px 600px 600px 0;
+    margin: 0px 0px 90px;
 }
 
 .content-project {
@@ -486,4 +493,21 @@ p {
     .copyright {
         font-size: 9px;
     }
+}
+
+@media (min-width: 1640px) {
+
+    .first-article {
+        display: flex;
+        flex-flow: row nowrap;
+    }
+
+    .border-img-school {
+        width: 272px;
+    }
+
+    .border-img-work {
+        width: 272px;
+    }
+}
 }
