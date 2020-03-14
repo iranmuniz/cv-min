@@ -151,6 +151,13 @@ body {
     border: 1px solid #dadce0;
     border-radius: 8px;
 }
+
+.box-cert {
+    margin: 50px 0px;
+    display: flex;
+    justify-content: center;
+}
+
 .third-section {
     padding: 150px 0px 150px;
 }
@@ -159,14 +166,14 @@ body {
     margin: 10px;
     background-color: white;
     padding: 40px;
-    width: 500px;
+    width: 800px;
     box-shadow: 0 10px 29px 0 rgba(68, 88, 144, 0.5);
     border: 1px solid #dadce0;
     border-radius: 8px;
 }
 
 .skills {
-    margin: 120px 0px;
+    /* margin: 120px 0px; */
 }
 
 .skills-star-box {
@@ -185,8 +192,8 @@ body {
 }
 
 .star {
-    height: 20px;
-    margin: -5px 0px 0px;
+    height: 39px;
+    margin: 30px 5px;
 }
 
 .black-font {
@@ -203,7 +210,14 @@ body {
 .fourth-section {
     background-color: rebeccapurple;
     padding: 150px 0px;
-    border-radius: 0px 600px 600px 0;
+    border-radius: 0px 600px 600px 0px;
+    margin: 0px 0px 90px;
+}
+
+.fourth-section-double {
+    background-color: rgb(218, 54, 54);
+    padding: 150px 0px;
+    border-radius: 600px 0px 0px 600px;
     margin: 0px 0px 90px;
 }
 
@@ -213,7 +227,7 @@ body {
 }
 
 .github-project {
-    height: 200px;
+    height: 130px;
 }
 
 .github-project:hover {
@@ -224,7 +238,7 @@ body {
 }
 
 .wordpress-project {
-    height: 200px;
+    height: 160px;
 }
 
 .wordpress-project:hover {
@@ -414,7 +428,6 @@ nav ul li a:hover {
  h3 {
     text-align: center;
     font-size: 30px;
-    /* color: white; */
     font-family: 'Fascinate Inline', cursive;
     padding: 0px 0px 30px;
 }
@@ -422,14 +435,17 @@ nav ul li a:hover {
 h4 {
     font-family: 'Baloo', cursive;
     text-align: center;
-    /* color: white; */
     font-size: 17px;
+}
+
+h5 {
+    font-family: 'Baloo', cursive;
+    font-size: 30px;
 }
 
 h6 {
     font-family: 'Patrick Hand', cursive;
     font-size: 20px;
-    /* color: black; */
 }
 
 p {
@@ -441,7 +457,7 @@ p {
 @media (max-width: 680px) {
 
     h1 {
-        font-size: 30px;
+        font-size: 26px;
     }
 
     h2 {
@@ -455,6 +471,11 @@ p {
 
     h4 {
         font-size: 14px;
+    }
+
+    h5 {
+        font-size: 20px;
+        text-align: center;
     }
 
     h6 {
@@ -479,7 +500,11 @@ p {
     }
 
     .fourth-section {
-        border-radius: 0px 300px 300px 0; 
+        border-radius: 0px; 
+    }
+
+    .fourth-section-double {
+        border-radius: 0px; 
     }
 
     .content-info {
@@ -487,7 +512,7 @@ p {
     }
 
     nav ul li a {
-        font-size: 9px;
+        font-size: 10px;
     }
 
     .copyright {
