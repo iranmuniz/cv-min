@@ -216,6 +216,7 @@ body {
     padding: 150px 0px;
     border-radius: 0px 600px 600px 0px;
     margin: 0px 0px 90px;
+    color: white;
 }
 
 .fourth-section-double {
@@ -223,6 +224,7 @@ body {
     padding: 150px 0px;
     border-radius: 600px 0px 0px 600px;
     margin: 0px 0px 90px;
+    color: white;
 }
 
 .content-project {
@@ -262,10 +264,6 @@ body {
     flex-flow: row wrap;
 }
 
-.community-section {
-    padding: 50px 100px;
-}
-
 .sixth-section {
     background-color: black;    
 }
@@ -298,34 +296,57 @@ footer {
     color: white;
 }
 
-.card-img-top-footer {
+/* COMUNIDADES */
+
+.community-section {
+    display: flex;
+    justify-content: center;
+}
+
+.community-footer {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    padding: 50px 0px 160px;
+}
+
+.img-wordpress-org{
+    height: 80px;
+}
+
+.img-order {
+    display: flex;
+    flex-flow: column;
+    padding: 0px 10px;
+}
+
+.content-block {
+    display: flex;
+    padding: 30px;
+}
+
+.title-community {
+    font-family: 'Kanit', sans-serif;
+}
+
+.text-community {
+    font-family: 'Cantarell', sans-serif;
+}
+
+.order-article {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+}
+
+.block-link-wordpress-org {
+    margin: 20px;
+}
+
+.card-img-top-community {
     height: 108px;
     border-radius: 999rem;  
 }
-
-/* COMUNIDADES */
-
-    .community-footer {
-        display: flex;
-        flex-flow: row wrap;
-        justify-content: space-around;
-        padding: 50px 0px 160px;
-    }
-
-    .img-wordpress-org{
-        height: 80px;
-    }
-
-    .img-order {
-        display: flex;
-        flex-flow: column;
-        padding: 0px 10px;
-    }
-
-    .content-block {
-        display: flex;
-        padding: 30px;
-    }
 
 /* FIM - COMUNIDADES */
 
@@ -353,7 +374,16 @@ footer {
 }
 
 .img-cv {
-    height: 100px;
+    height: 50px;
+}
+
+.cv-link {
+    display: flex;
+    justify-content: center;
+}
+
+.space-cv {
+    padding: 10px;
 }
 
 /* .content-info {
@@ -411,6 +441,16 @@ nav ul li a:hover {
     /* background-color: white; */
 }
 
+.logo-link-trampos{
+    height: 35px;
+    border-radius: 999rem;
+    transition: all 0.8s ease-in-out;
+}
+
+.logo-link-trampos:hover{
+    transform: scale(1.2) rotate(360deg);
+}
+
 .logo-link-footer:hover {
     transform: scale(1.2) rotate(360deg);
 }
@@ -430,27 +470,27 @@ nav ul li a:hover {
     height: 25px;
 }
 
- h1 {
-    font-family: 'Fredoka One', cursive;
-    font-size: 46px;
-    color: white;
-    text-align: center;
-    color: black;
- }
+h1 {
+font-family: 'Fredoka One', cursive;
+font-size: 46px;
+color: white;
+text-align: center;
+color: black;
+}
 
- h2 {
-    font-family: 'Fredoka One', cursive;
-    font-size: 27px;
-    color: white;
-    text-align: center;
-    color: black;
- }
+h2 {
+font-family: 'Fredoka One', cursive;
+font-size: 27px;
+color: white;
+text-align: center;
+color: black;
+}
 
- h3 {
-    text-align: center;
-    font-size: 30px;
-    font-family: 'Fascinate Inline', cursive;
-    padding: 0px 0px 30px;
+h3 {
+text-align: center;
+font-size: 30px;
+font-family: 'Fascinate Inline', cursive;
+padding: 0px 0px 30px;
 }
 
 h4 {
@@ -500,7 +540,8 @@ p {
     }
 
     h6 {
-        font-size: 15px;
+        font-size: 18px;
+        text-align: justify;
     }
 
     .border-card-zero-section {
@@ -541,11 +582,24 @@ p {
     }
 
     .logo-link-footer {
-        height: 20px;
+        height: 35px;
     }
 
     .copyright {
         font-size: 9px;
+    }
+
+    .content-block {
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+    }
+
+    .order-article {
+        display: flex;
+        flex-flow: column;
+        justify-content: center;
+        align-items: center;
     }
 }
 
