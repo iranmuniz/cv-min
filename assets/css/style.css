@@ -178,23 +178,16 @@ body {
     flex-flow: column;
 }
 
+.block-skill {
+    display: flex;
+    justify-content: space-around;
+    flex-flow: row wrap;
+}
+
 .skill {
+    margin: 50px 0px;
     display: flex;
     flex-direction: column;
-}
-
-.block-skill-left {
-    display: flex;
-    margin: 40px 0px;
-    align-items: flex-start;
-    flex-flow: column;
-}
-
-.block-skill-right {
-    display: flex;
-    margin: 40px 0px;
-    align-items: flex-end;
-    flex-flow: column;
 }
 
 .box-abiliity {
