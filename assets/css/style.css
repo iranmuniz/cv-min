@@ -1,7 +1,18 @@
 /* GLOBAL */ 
 
-.position-article {
+.position-header, .block-article , .position-personal, .name-job  {
     display: flex;
+}
+
+.position-header, .position-personal, .name-job {
+    justify-content: center;
+}
+
+.apresentation , .study-work {
+    background-color: teal;
+}
+
+.block-article {
     justify-content: space-around;
     flex-flow: row wrap;
 }
@@ -10,78 +21,63 @@ body {
     background-color: #ecf5ff;
 }
 
-/* HEADER */
+/* // GLOBAL */ 
 
-.position-header {
-    display: flex;
-    justify-content: center;
-    flex-flow: column;
+/* HEADER */
+/* AQUI FICA O MEU PERFIL DE APRESENTAÇÃO */
+
+header div h1 {
     color: white;
 }
 
-.zero-section, .first-section {
-    background-color: teal;
+header div h2 {
+    color: white;
 }
 
-.zero-section {
+header div h6 {
+    color: white;
+}
+
+.apresentation {
     padding: 30px 0px 100px;
 }
 
+.position-header {
+    flex-flow: column;
+}
+
 .position-personal {
-    display: flex;
     align-items: center;
-    justify-content: center;
 }
 
 .round-image {
     border-radius: 999rem;
     height: 200px;
     margin: 30px 70px;
-    /* box-shadow: 0 10px 29px 0 rgba(255, 17, 0, 0.904); */
 }
 
 .round-image:hover {
-    /* border: 2px solid #f70303; */
     -moz-transform: scale(1.1);
 	-webkit-transform: scale(1.1);
 	transform: scale(1.1);
-}
-
-.name-job {
-    display: flex;
-    justify-content: center;
 }
 
 .description {
     padding: 30px 0px;
 }
 
-.border-card-zero-section {
-    border-radius: 8px;
-}
-
-.border-card-zero-section {
-    display: flex;
-    flex-flow: column;
-    justify-content: center;
-    align-items: center;
-    margin: 0px 60px;
-}
+/* // HEADER */
+/* // FIM DO MEU PERFIL DE APRESENTAÇÃO */
 
 /* MAIN */
+/* AQUI FICA A FORMAÇÃO ACADÊMICA E EXPERIÊNCIAS PROFISSIONAIS */
 
-.first-section {
+.study-work {
     padding: 0px 0px 100px;
     border-radius: 0px 0px 600px 600px;
 }
 
-.first-article {
-    display: flex;
-    justify-content: space-around;
-    flex-flow: row wrap;
-}
-
-.border-card-primary-section {
+.border-card-study-work {
     margin: 10px;
     padding: 80px 40px;
     width: 500px;
@@ -91,7 +87,7 @@ body {
     border-radius: 8px;
 }
 
-.border-card-primary-section:hover {
+.border-card-study-work:hover {
     background-color: white;
     color: black;
     transition: background-color 1s, color 1s;
@@ -138,11 +134,15 @@ body {
     margin: 21px 0px;
 }
 
-.second-section {
+/* // FIM FORMAÇÃO ACADÊMICA E EXPERIÊNCIAS PROFISSIONAIS */
+
+/* AQUI FICA CURSOS MAIS RECENTES */
+
+.recent-courses {
     padding: 150px 0px 0px;
 }
 
-.border-card-second-section {
+.border-card-recent-courses {
     margin: 10px;
     background-color: white;
     padding: 40px;
@@ -162,11 +162,33 @@ body {
     height: 180px;
 }
 
-.third-section {
+/* // FIM CURSOS MAIS RECENTES */
+
+/* AQUI FICA OS CERTIFICADOS */
+
+.certificates {
+    padding: 150px 0px 0px;
+}
+
+.border-card-certicates {
+    margin: 10px;
+    background-color: white;
+    padding: 40px;
+    width: 500px;
+    box-shadow: 0 10px 29px 0 rgba(68, 88, 144, 0.5);
+    border: 1px solid #dadce0;
+    border-radius: 8px;
+}
+
+/* // FIM CERTIFICADOS */
+
+/* AQUI FICA AS HABILIDADES */
+
+.skills {
     padding: 150px 0px 150px;
 }
 
-.border-card-third-section{
+.border-card-skills{
     margin: 10px;
     background-color: white;
     padding: 40px;
@@ -178,13 +200,13 @@ body {
     flex-flow: column;
 }
 
-.block-skill {
+.block-skills {
     display: flex;
     justify-content: space-around;
     flex-flow: row wrap;
 }
 
-.skill {
+.skills-division {
     margin: 50px 0px;
     display: flex;
     flex-direction: column;
@@ -209,10 +231,7 @@ body {
     color: black;
 }
 
-.white-font {
-    color: white;
-}
-
+/* // FIM HABILIDADES */
 
 /* AQUI FICA OS PROJETOS */
 
@@ -358,6 +377,10 @@ footer {
 }
 
 /* FIM - COMUNIDADES */
+
+.white-font {
+    color: white;
+}
 
 .community {
     display: flex;
@@ -561,7 +584,7 @@ a {
         margin: 0px 13px;
     }
 
-    .border-card-primary-section {
+    .border-card-study-work {
         padding: 80px 0px;
     }
 
