@@ -1,10 +1,10 @@
 /* GLOBAL */ 
 
-.position-header, .block-article , .position-personal, .name-job  {
+.apresentation__position, .study-work__block, .apresentation__personal, .study-work__school, .study-work__work, .study-work__space, .certificates__block, .skills__block, .skills__card, .skills__card__block, .projects__block, .projects__position {
     display: flex;
 }
 
-.position-header, .position-personal, .name-job {
+.apresentation__position, .apresentation__personal, .study-work__space, .study-work__school, .study-work__work  {
     justify-content: center;
 }
 
@@ -12,27 +12,75 @@
     background-color: teal;
 }
 
-.block-article {
+.study-work__block, .certificates__block, .skills__block, .projects__block {
     justify-content: space-around;
+}
+
+.study-work__block, .certificates__block, .skills__block, .projects__block {
     flex-flow: row wrap;
+}
+
+.apresentation__position {
+    flex-flow: column;
 }
 
 body {
     background-color: #ecf5ff;
 }
 
+h1 {
+    font-family: 'Fredoka One', cursive;
+    font-size: 46px;
+    color: white;
+    text-align: center;
+    color: black;
+}
+    
+h2 {
+    font-family: 'Fredoka One', cursive;
+    font-size: 27px;
+    color: white;
+    text-align: center;
+    color: black;
+}
+    
+h3 {
+    text-align: center;
+    font-size: 30px;
+    font-family: 'Fascinate Inline', cursive;
+    padding: 0px 0px 30px;
+}
+    
+h4 {
+    font-family: 'Baloo', cursive;
+    text-align: center;
+    font-size: 17px;
+}
+    
+h5 {
+    font-family: 'Baloo', cursive;
+    font-size: 30px;
+}
+    
+h6 {
+    font-family: 'Patrick Hand', cursive;
+    font-size: 20px;
+}
+    
+p {
+    font-family: 'Patrick Hand', cursive;
+    font-size: 17px;
+    text-align: center;
+}
+    
+a {
+    text-decoration: none;
+}
+
 /* // GLOBAL */ 
 
 /* HEADER */
 /* AQUI FICA O MEU PERFIL DE APRESENTAÇÃO */
-
-header div h1 {
-    color: white;
-}
-
-header div h2 {
-    color: white;
-}
 
 header div h6 {
     color: white;
@@ -42,28 +90,46 @@ header div h6 {
     padding: 30px 0px 100px;
 }
 
-.position-header {
-    flex-flow: column;
-}
-
-.position-personal {
+.apresentation__personal {
     align-items: center;
 }
 
-.round-image {
+.apresentation__name h1 {
+    color: white;
+}
+
+.apresentation__personal__image {
     border-radius: 999rem;
     height: 200px;
     margin: 30px 70px;
 }
 
-.round-image:hover {
+.apresentation__personal__image:hover {
     -moz-transform: scale(1.1);
 	-webkit-transform: scale(1.1);
 	transform: scale(1.1);
 }
 
-.description {
+.apresentation__list {
+    margin: 10px;
+}
+
+.apresentation__list li {
+    list-style: none;
+    text-decoration: none;
+}
+
+.apresentation__list li h2 {
+    color: white;
+}
+
+.apresentation__description {
     padding: 30px 0px;
+}
+
+@media (max-width: 680px) {
+
+
 }
 
 /* // HEADER */
@@ -72,105 +138,60 @@ header div h6 {
 /* MAIN */
 /* AQUI FICA A FORMAÇÃO ACADÊMICA E EXPERIÊNCIAS PROFISSIONAIS */
 
+.study-work__card, .study-work__school, .study-work__work {
+    color: white;
+}
+
+.study-work__school, .study-work__work {
+    border: 1px solid #dadce0;
+    border-radius: 8px;
+    flex-flow: column;
+    align-items: center;
+    justify-items: center;
+    margin: 10px;
+    background-color: white;
+    width: 500px;
+    box-shadow: 0 10px 29px 0 rgba(68, 88, 144, 0.5);
+    padding: 50px;
+}
+
 .study-work {
     padding: 0px 0px 100px;
     border-radius: 0px 0px 600px 600px;
 }
 
-.border-card-study-work {
+.study-work__card {
     margin: 10px;
     padding: 80px 40px;
     width: 500px;
-    color: white;
     box-shadow: 0 10px 29px 0 rgba(68, 88, 144, 0.5);
     border: 1px solid #dadce0;
     border-radius: 8px;
 }
 
-.border-card-study-work:hover {
+.study-work__card:hover {
     background-color: white;
     color: black;
     transition: background-color 1s, color 1s;
 }
 
-.border-img-school {
-    border: 1px solid #dadce0;
-    border-radius: 8px;
-    margin: 10px;
-    background-color: white;
-    padding: 50px;
-    width: 500px;
-    color: white;
-    box-shadow: 0 10px 29px 0 rgba(68, 88, 144, 0.5);
-    display: flex;
-    flex-flow: column;
-    align-items: center;
-    justify-items: center;
-    justify-content: center;
-}
-
-.border-img-work {
-    border: 1px solid #dadce0;
-    border-radius: 8px;
-    margin: 10px;
-    background-color: white;
-    padding: 25px;
-    width: 500px;
-    color: white;
-    box-shadow: 0 10px 29px 0 rgba(68, 88, 144, 0.5);
-    display: flex;
-    flex-flow: column;
-    align-items: center;
-    justify-items: center;
-    justify-content: center;
-}
-
-.space-img {
-    display: flex;
-    justify-content: center;
-}
-
-.img-marketing {
+.study-work__space__img {
     margin: 21px 0px;
 }
 
+@media (max-width: 680px) {
+
+
+}
+
 /* // FIM FORMAÇÃO ACADÊMICA E EXPERIÊNCIAS PROFISSIONAIS */
-
-/* AQUI FICA CURSOS MAIS RECENTES */
-
-.recent-courses {
-    padding: 150px 0px 0px;
-}
-
-.border-card-recent-courses {
-    margin: 10px;
-    background-color: white;
-    padding: 40px;
-    width: 500px;
-    box-shadow: 0 10px 29px 0 rgba(68, 88, 144, 0.5);
-    border: 1px solid #dadce0;
-    border-radius: 8px;
-}
-
-.box-cert {
-    margin: 50px 0px;
-    display: flex;
-    justify-content: center;
-}
-
-.img-cert {
-    height: 180px;
-}
-
-/* // FIM CURSOS MAIS RECENTES */
-
-/* AQUI FICA OS CERTIFICADOS */
+/* AQUI FICA CURSOS E CERTIFICACOES MAIS RECENTES */
 
 .certificates {
     padding: 150px 0px 0px;
 }
 
-.border-card-certicates {
+.certificates__card {
     margin: 10px;
     background-color: white;
     padding: 40px;
@@ -180,15 +201,19 @@ header div h6 {
     border-radius: 8px;
 }
 
-/* // FIM CERTIFICADOS */
+@media (max-width: 680px) {
 
+
+}
+
+/* // FIM CERTIFICADOS */
 /* AQUI FICA AS HABILIDADES */
 
 .skills {
     padding: 150px 0px 150px;
 }
 
-.border-card-skills{
+.skills__card {
     margin: 10px;
     background-color: white;
     padding: 40px;
@@ -196,46 +221,29 @@ header div h6 {
     box-shadow: 0 10px 29px 0 rgba(68, 88, 144, 0.5);
     border: 1px solid #dadce0;
     border-radius: 8px;
-    display: flex;
     flex-flow: column;
 }
 
-.block-skills {
-    display: flex;
+.skills__card__block {
     justify-content: space-around;
     flex-flow: row wrap;
 }
 
-.skills-division {
+.skills__card__block__division {
     margin: 50px 0px;
     display: flex;
     flex-direction: column;
 }
 
-.box-abiliity {
-    display: flex;
-    justify-content: space-around;
-    flex-flow: row wrap;
-}
+@media (max-width: 680px) {
 
-.space-box-star {
-    margin: 0px 10px;
-}
 
-.star {
-    height: 39px;
-    margin: 0px 5px;
-}
-
-.black-font {
-    color: black;
 }
 
 /* // FIM HABILIDADES */
-
 /* AQUI FICA OS PROJETOS */
 
-.fourth-section {
+.projects-github {
     background-color: rebeccapurple;
     padding: 150px 0px;
     border-radius: 0px 600px 600px 0px;
@@ -243,21 +251,6 @@ header div h6 {
     color: white;
     box-shadow: 0 10px 29px 0 rgba(68, 88, 144, 0.5);
     border: 1px solid #dadce0;
-}
-
-.fourth-section-double {
-    background-color: rgb(218, 54, 54);
-    padding: 150px 0px;
-    border-radius: 600px 0px 0px 600px;
-    margin: 0px 0px 90px;
-    color: white;
-    box-shadow: 0 10px 29px 0 rgba(68, 88, 144, 0.5);
-    border: 1px solid #dadce0;
-}
-
-.content-project {
-    color: white;
-    margin: 50px 0px 0px;
 }
 
 .github-project {
@@ -271,6 +264,16 @@ header div h6 {
     transition: 1s;
 }
 
+.projects-meehub {
+    background-color: rgb(218, 54, 54);
+    padding: 150px 0px;
+    border-radius: 600px 0px 0px 600px;
+    margin: 0px 0px 90px;
+    color: white;
+    box-shadow: 0 10px 29px 0 rgba(68, 88, 144, 0.5);
+    border: 1px solid #dadce0;
+}
+
 .wordpress-project {
     height: 160px;
 }
@@ -282,22 +285,99 @@ header div h6 {
     transition: 1s;
 }
 
-.img-construction {
-    height: 124px;
+.projects__content {
+    color: white;
+    margin: 50px 0px 0px;
 }
 
-.position-article-card {
+.projects__position {
+    justify-content: center;
+}
+
+@media (max-width: 680px) {
+
+
+}
+
+/* // FIM DE PROJETOS */
+/* AQUI FICA AS COMUNIDADES */
+
+.community{
+    display: flex;
+    justify-content: center;
+}
+
+.community__block {
+    display: flex;
+    padding: 30px;
+}
+
+.community__representation {
+    display: flex;
+    flex-flow: column;
+    padding: 0px 10px;
+}
+
+.community__logo {
+    height: 108px;
+    border-radius: 999rem;  
+}
+
+.community__article {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+}
+
+.community__article__title{
+    font-family: 'Kanit', sans-serif;
+}
+
+.community__article__text{
+    font-family: 'Cantarell', sans-serif;
+}
+
+.img-wordpress-org{
+    height: 80px;
+}
+
+.block-link-wordpress-org {
+    margin: 20px;
+}
+
+@media (max-width: 680px) {
+
+
+}
+
+/* FIM - COMUNIDADES */
+/* AQUI FICA OS VOLUNTARIADOS */
+
+
+.voluntary {
+    background-color: black;    
+}
+
+.white-font {
+    color: white;
+}
+
+.voluntary__container {
+    padding: 150px 0px;
+}
+
+.voluntary__container div h3 {
+    color: white;
+}
+
+.voluntary__article {
     display: flex;
     justify-content: center;
     flex-flow: row wrap;
 }
 
-.sixth-section {
-    background-color: black;    
-}
-
-.position-container {
-    padding: 150px 0px;
+.voluntary__article__event {
+    border: 1px solid rgb(0, 1, 2);
 }
 
 .card {
@@ -313,119 +393,53 @@ header div h6 {
     font-size: 10px;
 }
 
-.card-img-top {
-    border: 1px solid rgb(0, 1, 2);
-}
-
-/* FOOTER */
+/* FIM - VOLUNTARIADO */
+/* AQUI COMECA O RODAPE */
 
 footer {
     background-color: #222331;
     color: white;
 }
 
-/* COMUNIDADES */
-
-.community-section {
+.footer__block {
     display: flex;
     justify-content: center;
-}
-
-.community-footer {
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: space-around;
-    padding: 50px 0px 160px;
-}
-
-.img-wordpress-org{
-    height: 80px;
-}
-
-.img-order {
-    display: flex;
     flex-flow: column;
-    padding: 0px 10px;
+    padding: 70px;
 }
 
-.content-block {
-    display: flex;
-    padding: 30px;
-}
-
-.title-community {
-    font-family: 'Kanit', sans-serif;
-}
-
-.text-community {
-    font-family: 'Cantarell', sans-serif;
-}
-
-.order-article {
+.footer__position {
     display: flex;
     flex-flow: column;
     align-items: center;
 }
 
-.block-link-wordpress-org {
-    margin: 20px;
-}
-
-.card-img-top-community {
-    height: 108px;
-    border-radius: 999rem;  
-}
-
-/* FIM - COMUNIDADES */
-
-.white-font {
-    color: white;
-}
-
-.community {
-    display: flex;
-    flex-flow: column;
-    text-align: center;
-}
-
-.content-title {
-    display: flex;
-    align-items: center;
-    text-align: center;
-    justify-content: center;
-    margin: 30px 0px;
-}
-
-.title-footer {
+.footer__position__info{
     font-family: 'Baloo', cursive;
-    font-size: 22px;
-}
-
-.content-img {
-    display: flex;
+    font-size: 35px;
 }
 
 .img-cv {
     height: 50px;
-}
-
-.cv-link {
-    display: flex;
-    justify-content: center;
-}
-
-.space-cv {
     padding: 10px;
 }
 
-/* .content-info {
-    
-} */
-
-.content-letters {
+.footer__nav {
     display: flex;
-    flex-flow: column wrap;
+    justify-content: center;
+    flex-flow: row wrap;
+}
+
+.footer__order{
+    display: flex;
     align-items: center;
+    justify-content: center;
+    flex-flow: row wrap;
+}
+
+.footer__order__list{
+    padding: 0 15px;
+    margin: 40px 0 0 0;
 }
 
 nav ul li {
@@ -444,48 +458,19 @@ nav ul li a:hover {
     text-decoration: none;
 }
 
-.logo-link {
-    margin: 10px 10px 0px;
-    height: 20px;
-    transition: all 0.8s ease-in-out;
-}
-
-.logo-link:hover {
-    transform: scale(1.2) rotate(360deg);
-}
-
-.ul-footer {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-flow: row wrap;
-}
-
-.li-footer {
-    padding: 0 15px;
-    margin: 40px 0 0 0;
-}
-
-.logo-link-footer {
-    height: 35px;
-    transition: all 0.8s ease-in-out;
-    /* filter: grayscale(100%); */
-    /* background-color: white; */
-}
-
-.logo-link-trampos{
+.footer__order__list__logo{
     height: 35px;
     border-radius: 999rem;
     transition: all 0.8s ease-in-out;
 }
 
-.logo-link-trampos:hover{
+.footer__order__list__logo:hover{
     transform: scale(1.2) rotate(360deg);
 }
 
-.logo-link-footer:hover {
-    transform: scale(1.2) rotate(360deg);
-}
+/* FIM - RODAPE */
+/* AQUI COMECA O DESFECHO */
+
 
 .dark-footer {
     background-color: #171824;
@@ -502,54 +487,7 @@ nav ul li a:hover {
     height: 25px;
 }
 
-h1 {
-font-family: 'Fredoka One', cursive;
-font-size: 46px;
-color: white;
-text-align: center;
-color: black;
-}
-
-h2 {
-font-family: 'Fredoka One', cursive;
-font-size: 27px;
-color: white;
-text-align: center;
-color: black;
-}
-
-h3 {
-text-align: center;
-font-size: 30px;
-font-family: 'Fascinate Inline', cursive;
-padding: 0px 0px 30px;
-}
-
-h4 {
-    font-family: 'Baloo', cursive;
-    text-align: center;
-    font-size: 17px;
-}
-
-h5 {
-    font-family: 'Baloo', cursive;
-    font-size: 30px;
-}
-
-h6 {
-    font-family: 'Patrick Hand', cursive;
-    font-size: 20px;
-}
-
-p {
-    font-family: 'Patrick Hand', cursive;
-    font-size: 17px;
-    text-align: center;
-}
-
-a {
-    text-decoration: none;
-}
+/* FIM - DESFECHO */
 
 @media (max-width: 680px) {
 
