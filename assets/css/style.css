@@ -29,17 +29,15 @@ body {
 }
 
 h1 {
+    color: white;
     font-family: 'Fredoka One', cursive;
     font-size: 46px;
-    color: white;
     text-align: center;
-    color: black;
 }
     
 h2 {
     font-family: 'Fredoka One', cursive;
     font-size: 27px;
-    color: white;
     text-align: center;
     color: black;
 }
@@ -69,7 +67,7 @@ h6 {
     
 p {
     font-family: 'Patrick Hand', cursive;
-    font-size: 17px;
+    font-size: 19px;
     text-align: center;
 }
     
@@ -77,435 +75,19 @@ a {
     text-decoration: none;
 }
 
-/* // GLOBAL */ 
-
-/* HEADER */
-/* AQUI FICA O MEU PERFIL DE APRESENTAÇÃO */
-
-header div h6 {
-    color: white;
-}
-
-.apresentation {
-    padding: 30px 0px 100px;
-}
-
-.apresentation__personal {
-    align-items: center;
-}
-
-.apresentation__name h1 {
-    color: white;
-}
-
-.apresentation__personal__image {
-    border-radius: 999rem;
-    height: 200px;
-    margin: 30px 70px;
-}
-
-.apresentation__personal__image:hover {
-    -moz-transform: scale(1.1);
-	-webkit-transform: scale(1.1);
-	transform: scale(1.1);
-}
-
-.apresentation__list {
-    margin: 10px;
-}
-
-.apresentation__list li {
-    list-style: none;
-    text-decoration: none;
-}
-
-.apresentation__list li h2 {
-    color: white;
-}
-
-.apresentation__description {
-    padding: 30px 0px;
-}
-
-@media (max-width: 680px) {
-
-
-}
-
-/* // HEADER */
-/* // FIM DO MEU PERFIL DE APRESENTAÇÃO */
-
-/* MAIN */
-/* AQUI FICA A FORMAÇÃO ACADÊMICA E EXPERIÊNCIAS PROFISSIONAIS */
-
-.study-work__card, .study-work__school, .study-work__work {
-    color: white;
-}
-
-.study-work__school, .study-work__work {
-    border: 1px solid #dadce0;
-    border-radius: 8px;
-    flex-flow: column;
-    align-items: center;
-    justify-items: center;
-    margin: 10px;
-    background-color: white;
-    width: 500px;
-    box-shadow: 0 10px 29px 0 rgba(68, 88, 144, 0.5);
-    padding: 50px;
-}
-
-.study-work {
-    padding: 0px 0px 100px;
-    border-radius: 0px 0px 600px 600px;
-}
-
-.study-work__card {
-    margin: 10px;
-    padding: 80px 40px;
-    width: 500px;
-    box-shadow: 0 10px 29px 0 rgba(68, 88, 144, 0.5);
-    border: 1px solid #dadce0;
-    border-radius: 8px;
-}
-
-.study-work__card:hover {
-    background-color: white;
-    color: black;
-    transition: background-color 1s, color 1s;
-}
-
-.study-work__space__img {
-    margin: 21px 0px;
-}
-
-@media (max-width: 680px) {
-
-
-}
-
-/* // FIM FORMAÇÃO ACADÊMICA E EXPERIÊNCIAS PROFISSIONAIS */
-/* AQUI FICA CURSOS E CERTIFICACOES MAIS RECENTES */
-
-.certificates {
-    padding: 150px 0px 0px;
-}
-
-.certificates__card {
-    margin: 10px;
-    background-color: white;
-    padding: 40px;
-    width: 500px;
-    box-shadow: 0 10px 29px 0 rgba(68, 88, 144, 0.5);
-    border: 1px solid #dadce0;
-    border-radius: 8px;
-}
-
-@media (max-width: 680px) {
-
-
-}
-
-/* // FIM CERTIFICADOS */
-/* AQUI FICA AS HABILIDADES */
-
-.skills {
-    padding: 150px 0px 150px;
-}
-
-.skills__card {
-    margin: 10px;
-    background-color: white;
-    padding: 40px;
-    width: 80%;
-    box-shadow: 0 10px 29px 0 rgba(68, 88, 144, 0.5);
-    border: 1px solid #dadce0;
-    border-radius: 8px;
-    flex-flow: column;
-}
-
-.skills__card__block {
-    justify-content: space-around;
-    flex-flow: row wrap;
-}
-
-.skills__card__block__division {
-    margin: 50px 0px;
-    display: flex;
-    flex-direction: column;
-}
-
-@media (max-width: 680px) {
-
-
-}
-
-/* // FIM HABILIDADES */
-/* AQUI FICA OS PROJETOS */
-
-.projects-github {
-    background-color: rebeccapurple;
-    padding: 150px 0px;
-    border-radius: 0px 600px 600px 0px;
-    margin: 0px 0px 90px;
-    color: white;
-    box-shadow: 0 10px 29px 0 rgba(68, 88, 144, 0.5);
-    border: 1px solid #dadce0;
-}
-
-.github-project {
-    height: 130px;
-}
-
-.github-project:hover {
-    -moz-transform: scale(1.1);
-    -webkit-transform: scale(0.1);
-    transform: scale(0.9);
-    transition: 1s;
-}
-
-.projects-meehub {
-    background-color: rgb(218, 54, 54);
-    padding: 150px 0px;
-    border-radius: 600px 0px 0px 600px;
-    margin: 0px 0px 90px;
-    color: white;
-    box-shadow: 0 10px 29px 0 rgba(68, 88, 144, 0.5);
-    border: 1px solid #dadce0;
-}
-
-.wordpress-project {
-    height: 160px;
-}
-
-.wordpress-project:hover {
-    -moz-transform: scale(1.1);
-    -webkit-transform: scale(0.1);
-    transform: scale(0.9);
-    transition: 1s;
-}
-
-.projects__content {
-    color: white;
-    margin: 50px 0px 0px;
-}
-
-.projects__position {
-    justify-content: center;
-}
-
-@media (max-width: 680px) {
-
-
-}
-
-/* // FIM DE PROJETOS */
-/* AQUI FICA AS COMUNIDADES */
-
-.community{
-    display: flex;
-    justify-content: center;
-}
-
-.community__block {
-    display: flex;
-    padding: 30px;
-}
-
-.community__representation {
-    display: flex;
-    flex-flow: column;
-    padding: 0px 10px;
-}
-
-.community__logo {
-    height: 108px;
-    border-radius: 999rem;  
-}
-
-.community__article {
-    display: flex;
-    flex-flow: column;
-    align-items: center;
-}
-
-.community__article__title{
-    font-family: 'Kanit', sans-serif;
-}
-
-.community__article__text{
-    font-family: 'Cantarell', sans-serif;
-}
-
-.img-wordpress-org{
-    height: 80px;
-}
-
-.block-link-wordpress-org {
-    margin: 20px;
-}
-
-@media (max-width: 680px) {
-
-
-}
-
-/* FIM - COMUNIDADES */
-/* AQUI FICA OS VOLUNTARIADOS */
-
-
-.voluntary {
-    background-color: black;    
-}
-
-.white-font {
-    color: white;
-}
-
-.voluntary__container {
-    padding: 150px 0px;
-}
-
-.voluntary__container div h3 {
-    color: white;
-}
-
-.voluntary__article {
-    display: flex;
-    justify-content: center;
-    flex-flow: row wrap;
-}
-
-.voluntary__article__event {
-    border: 1px solid rgb(0, 1, 2);
-}
-
-.card {
-    margin: 18px;
-}
-
-.card:hover {
-    /* border: 1px solid #f70303; */
-    -moz-transform: scale(1.1);
-	-webkit-transform: scale(1.1);
-    transform: scale(1.1);
-    transition: 1s;
-    font-size: 10px;
-}
-
-/* FIM - VOLUNTARIADO */
-/* AQUI COMECA O RODAPE */
-
-footer {
-    background-color: #222331;
-    color: white;
-}
-
-.footer__block {
-    display: flex;
-    justify-content: center;
-    flex-flow: column;
-    padding: 70px;
-}
-
-.footer__position {
-    display: flex;
-    flex-flow: column;
-    align-items: center;
-}
-
-.footer__position__info{
-    font-family: 'Baloo', cursive;
-    font-size: 35px;
-}
-
-.img-cv {
-    height: 50px;
-    padding: 10px;
-}
-
-.footer__nav {
-    display: flex;
-    justify-content: center;
-    flex-flow: row wrap;
-}
-
-.footer__order{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-flow: row wrap;
-}
-
-.footer__order__list{
-    padding: 0 15px;
-    margin: 40px 0 0 0;
-}
-
-nav ul li {
-    list-style: none;
-}
-
-nav ul li a {
-    text-decoration: none;
-    color: white;
-    font-family: 'McLaren', cursive;
-    font-size: 12px;
-}
-
-nav ul li a:hover {
-    color: black;
-    text-decoration: none;
-}
-
-.footer__order__list__logo{
-    height: 35px;
-    border-radius: 999rem;
-    transition: all 0.8s ease-in-out;
-}
-
-.footer__order__list__logo:hover{
-    transform: scale(1.2) rotate(360deg);
-}
-
-/* FIM - RODAPE */
-/* AQUI COMECA O DESFECHO */
-
-
-.dark-footer {
-    background-color: #171824;
-    padding: 15px;
-}
-
-.copyright {
-    display: flex;
-    justify-content: center;
-    font-size: 10px;
-}
-
-.img-heart-bit{
-    height: 25px;
-}
-
-/* FIM - DESFECHO */
-
 @media (max-width: 680px) {
 
     h1 {
-        font-size: 26px;
+        font-size: 30px;
     }
 
     h2 {
-        font-size: 15px;
+        font-size: 18px;
         text-align: center;
     }
 
     h3 {
         font-size: 27px;
-    }
-
-    h4 {
-        font-size: 14px;
     }
 
     h5 {
@@ -595,4 +177,448 @@ nav ul li a:hover {
     .border-img-work {
         width: 272px;
     }
+}
+
+/* // GLOBAL */ 
+
+/* HEADER */
+/* AQUI FICA O MEU PERFIL DE APRESENTAÇÃO */
+
+header div h6 {
+    color: white;
+}
+
+.apresentation {
+    padding: 30px 0px 100px;
+}
+
+.apresentation__personal {
+    align-items: center;
+}
+
+.apresentation__personal__image {
+    border-radius: 999rem;
+    height: 200px;
+    margin: 30px 70px;
+}
+
+.apresentation__personal__image:hover {
+    -moz-transform: scale(1.1);
+	-webkit-transform: scale(1.1);
+	transform: scale(1.1);
+}
+
+.apresentation__list {
+    margin: 10px;
+}
+
+.apresentation__list li {
+    list-style: none;
+    text-decoration: none;
+}
+
+.apresentation__list li h2 {
+    color: white;
+}
+
+.apresentation__description {
+    padding: 30px 0px;
+}
+
+@media (max-width: 680px) {
+
+}
+
+/* // HEADER */
+/* // FIM DO MEU PERFIL DE APRESENTAÇÃO */
+
+/* MAIN */
+/* AQUI FICA A FORMAÇÃO ACADÊMICA E EXPERIÊNCIAS PROFISSIONAIS */
+
+.study-work__card, .study-work__school, .study-work__work {
+    color: white;
+}
+
+.study-work__school, .study-work__work {
+    border: 1px solid #dadce0;
+    border-radius: 8px;
+    flex-flow: column;
+    align-items: center;
+    justify-items: center;
+    margin: 10px;
+    background-color: white;
+    width: 500px;
+    box-shadow: 0 10px 29px 0 rgba(68, 88, 144, 0.5);
+    padding: 50px;
+}
+
+.study-work {
+    padding: 0px 0px 100px;
+    border-radius: 0px 0px 600px 600px;
+}
+
+.study-work__card {
+    margin: 10px;
+    padding: 80px 40px;
+    width: 500px;
+    box-shadow: 0 10px 29px 0 rgba(68, 88, 144, 0.5);
+    border: 1px solid #dadce0;
+    border-radius: 8px;
+}
+
+.study-work__card:hover {
+    background-color: white;
+    color: black;
+    transition: background-color 1s, color 1s;
+}
+
+.study-work__space__img {
+    margin: 21px 0px;
+}
+
+@media (max-width: 680px) {
+    .study-work__school, .study-work__work {
+        display: none;
+    }
+
+    .study-work__card h3 {
+        font-size: 35px;
+    }
+
+    .study-work__card h4 {
+        font-size: 18px;
+    }
+
+}
+
+/* // FIM FORMAÇÃO ACADÊMICA E EXPERIÊNCIAS PROFISSIONAIS */
+/* AQUI FICA CURSOS E CERTIFICACOES MAIS RECENTES */
+
+.certificates {
+    padding: 150px 0px 0px;
+}
+
+.certificates__card {
+    margin: 10px;
+    background-color: white;
+    padding: 40px;
+    width: 500px;
+    box-shadow: 0 10px 29px 0 rgba(68, 88, 144, 0.5);
+    border: 1px solid #dadce0;
+    border-radius: 8px;
+}
+
+@media (max-width: 680px) {
+
+}
+
+/* // FIM CERTIFICADOS */
+/* AQUI FICA AS HABILIDADES */
+
+.skills {
+    padding: 150px 0px 150px;
+}
+
+.skills__card {
+    margin: 10px;
+    background-color: white;
+    padding: 40px;
+    width: 80%;
+    box-shadow: 0 10px 29px 0 rgba(68, 88, 144, 0.5);
+    border: 1px solid #dadce0;
+    border-radius: 8px;
+    flex-flow: column;
+}
+
+.skills__card__block {
+    justify-content: space-around;
+    flex-flow: row wrap;
+}
+
+.skills__card__block__division {
+    margin: 50px 0px;
+    display: flex;
+    flex-direction: column;
+}
+
+@media (max-width: 680px) {
+
+    .skills__card {
+        width: 94%;
+    }
+
+    .skills__card__star {
+        width: 278px;
+    }
+}
+
+/* // FIM HABILIDADES */
+/* AQUI FICA OS PROJETOS */
+
+.projects-github {
+    background-color: rebeccapurple;
+    padding: 150px 0px;
+    border-radius: 0px 600px 600px 0px;
+    margin: 0px 0px 90px;
+    color: white;
+    box-shadow: 0 10px 29px 0 rgba(68, 88, 144, 0.5);
+    border: 1px solid #dadce0;
+}
+
+.github-project {
+    height: 130px;
+}
+
+.github-project:hover {
+    -moz-transform: scale(1.1);
+    -webkit-transform: scale(0.1);
+    transform: scale(0.9);
+    transition: 1s;
+}
+
+.projects-meehub {
+    background-color: rgb(218, 54, 54);
+    padding: 150px 0px;
+    border-radius: 600px 0px 0px 600px;
+    margin: 0px 0px 90px;
+    color: white;
+    box-shadow: 0 10px 29px 0 rgba(68, 88, 144, 0.5);
+    border: 1px solid #dadce0;
+}
+
+.wordpress-project {
+    height: 160px;
+}
+
+.wordpress-project:hover {
+    -moz-transform: scale(1.1);
+    -webkit-transform: scale(0.1);
+    transform: scale(0.9);
+    transition: 1s;
+}
+
+.projects__content {
+    color: white;
+    margin: 50px 0px 0px;
+}
+
+.projects__position {
+    justify-content: center;
+}
+
+@media (max-width: 680px) {
+
+    .projects-github, .projects-meehub {
+        border-radius: 0px
+    }
+
+    .projects__content {
+        margin: 50px 30px 0px;
+    }
+
+}
+
+/* // FIM DE PROJETOS */
+/* AQUI FICA AS COMUNIDADES */
+
+.community{
+    display: flex;
+    justify-content: center;
+}
+
+.community__block {
+    display: flex;
+    padding: 30px;
+}
+
+.community__representation {
+    display: flex;
+    flex-flow: column;
+    padding: 0px 10px;
+}
+
+.community__logo {
+    height: 108px;
+    border-radius: 999rem;  
+}
+
+.community__article {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+}
+
+.community__article__title{
+    font-family: 'Kanit', sans-serif;
+}
+
+.community__article__text{
+    font-family: 'Cantarell', sans-serif;
+}
+
+.img-wordpress-org{
+    height: 80px;
+}
+
+.block-link-wordpress-org {
+    margin: 20px;
+}
+
+@media (max-width: 680px) {
+
+    .community__block {
+        flex-flow: column;
+        align-items: center;
+        text-align: justify;
+    }
+
+}
+
+/* FIM - COMUNIDADES */
+/* AQUI FICA OS VOLUNTARIADOS */
+
+
+.voluntary {
+    background-color: black;    
+}
+
+.white-font {
+    color: white;
+}
+
+.voluntary__container {
+    padding: 150px 0px;
+}
+
+.voluntary__container div h3 {
+    color: white;
+}
+
+.voluntary__article {
+    display: flex;
+    justify-content: center;
+    flex-flow: row wrap;
+}
+
+.voluntary__article__event {
+    border: 1px solid rgb(0, 1, 2);
+}
+
+.card {
+    margin: 18px;
+}
+
+.card:hover {
+    /* border: 1px solid #f70303; */
+    -moz-transform: scale(1.1);
+	-webkit-transform: scale(1.1);
+    transform: scale(1.1);
+    transition: 1s;
+    font-size: 10px;
+}
+
+/* FIM - VOLUNTARIADO */
+/* AQUI COMECA O RODAPE */
+
+footer {
+    background-color: #222331;
+    color: white;
+}
+
+.footer__block {
+    display: flex;
+    justify-content: center;
+    flex-flow: column;
+    padding: 70px 0px;
+}
+
+.footer__position {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+}
+
+.footer__position__info{
+    font-family: 'Baloo', cursive;
+    font-size: 35px;
+}
+
+.footer__position__info a {
+    text-decoration: none;
+    
+}
+
+.img-cv {
+    height: 50px;
+    padding: 10px;
+}
+
+.footer__nav {
+    display: flex;
+    justify-content: center;
+    flex-flow: row wrap;
+}
+
+.footer__order{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: row wrap;
+}
+
+.footer__order__list{
+    padding: 0 15px;
+    margin: 40px 0 0 0;
+}
+
+nav ul li {
+    list-style: none;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-family: 'McLaren', cursive;
+    font-size: 12px;
+}
+
+nav ul li a:hover {
+    color: black;
+    text-decoration: none;
+}
+
+.footer__order__list__logo{
+    height: 35px;
+    border-radius: 999rem;
+    transition: all 0.8s ease-in-out;
+}
+
+.footer__order__list__logo:hover{
+    transform: scale(1.2) rotate(360deg);
+}
+
+@media (max-width: 680px) {
+
+    .footer__position__info {
+        font-size: 25pxpx;
+    }   
+}
+
+/* FIM - RODAPE */
+/* AQUI COMECA O DESFECHO */
+
+
+.dark-footer {
+    background-color: #171824;
+    padding: 15px;
+}
+
+.copyright {
+    display: flex;
+    justify-content: center;
+    font-size: 10px;
+}
+
+.img-heart-bit{
+    height: 25px;
 }
