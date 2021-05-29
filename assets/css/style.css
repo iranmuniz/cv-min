@@ -240,11 +240,39 @@ a {
     }
 }
 
-@media (min-width: 1640px) {
+@media (min-width: 1350px) {
 
-    .study-work__block, .study-work__school {
-        flex-flow: row nowrap;
+    .study-work__block {
+        align-items: center;
     }
+    
+    .study-work__card {
+        width: 45%;
+        height: 410px;
+    }
+
+    .study-work__school, .study-work__work {
+        display: none;
+    }
+    
+}
+
+.enterprise {
+    align-items: center;
+    display: flex;
+    justify-content: space-around;
+    flex-flow: column wrap;
+    background-color: white;
+    padding: 150px 0px;
+    margin: 100px 0px 0px;
+}
+
+@media (max-width: 1350px) {
+
+    .enterprise {
+        display: none;
+    }
+    
 }
 
 .certificates {
@@ -465,7 +493,7 @@ a {
 @media (max-width: 680px) {
 
     .footer__position__info {
-        font-size: 25pxpx;
+        font-size: 20px;
     }  
 
     .copyright {
