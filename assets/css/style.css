@@ -261,10 +261,13 @@ a {
     align-items: center;
     display: flex;
     justify-content: space-around;
-    flex-flow: column wrap;
-    background-color: white;
-    padding: 150px 0px;
     margin: 100px 0px 0px;
+    width: 64%;
+}
+
+.enterprise__container {
+    display: flex;
+    align-items: center;
 }
 
 @media (max-width: 1350px) {
