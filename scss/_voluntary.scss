@@ -1,0 +1,43 @@
+.voluntary {
+    background-color: black;    
+}
+
+.white-font {
+    color: white;
+}
+
+.voluntary__container {
+    padding: 150px 200px;
+}
+
+.voluntary__container div h3 {
+    color: white;
+}
+
+.voluntary__article__event {
+    border: 1px solid rgb(0, 1, 2);
+}
+
+.card {
+    margin: 18px;
+}
+
+.card div p {
+    line-height: 1.3;
+}
+
+.card:hover {
+    /* border: 1px solid #f70303; */
+    -moz-transform: scale(1.1);
+	-webkit-transform: scale(1.1);
+    font-size: 10px;
+    transform: scale(1.1);
+    transition: 1s;
+}
+
+@media (max-width: 1000px) {
+
+    .voluntary__container {
+        padding: 150px 0px;
+    }
+}

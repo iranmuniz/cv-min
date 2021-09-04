@@ -4,14 +4,19 @@ $white: white;
 $teal: teal;
 $box-shadow-card: rgba(68, 88, 144, 0.5);
 
+/// FONTS
+
+$fontMcLaren: 'McLaren', cursive;
+$fontKanit: 'Kanit', sans-serif;
+$fontCantarell: 'Cantarell', sans-serif;
 
 // GLOBAL FLEX
 
-.apresentation__position, .study-work__block, .apresentation__personal, .study-work__school, .study-work__work, .study-work__space, .certificates__block, .skills__block, .skills__card, .skills__card__block, .projects__block, .projects__position, .first-article, .skills__card__block__division, .community, .community__block, .community__representation, .community__article, .voluntary__article, .footer__block, .footer__position, .footer__nav, .footer__order, .copyright, .projects-platform__content {
+.apresentation__position, .study-work__block, .apresentation__personal, .certificates__block, .skills__block, .skills__card, .skills__card__block, .projects__block, .projects__position, .first-article, .skills__card__block__division, .community, .community__block, .community__representation, .community__article, .voluntary__article, .footer, .footer__position, .footer__nav, .footer__order, .copyright, .projects-platform__content {
     display: flex;
 }
 
-.apresentation__position, .apresentation__personal, .study-work__space, .study-work__school, .study-work__work, .projects__position, .community, .voluntary__article, .footer__block, .footer__nav, .footer__order, .copyright {
+.apresentation__position, .apresentation__personal, .projects__position, .community, .voluntary__article, .footer, .footer__nav, .footer__order, .copyright {
     justify-content: center;
 }
 
@@ -23,29 +28,19 @@ $box-shadow-card: rgba(68, 88, 144, 0.5);
     flex-flow: row wrap;
 }
 
-.apresentation__position, .study-work__school, .study-work__work, .skills__card, .community__representation, .community__article, .footer__block, .footer__position {
+.apresentation__position, .skills__card, .community__representation, .community__article, .footer, .footer__position {
     flex-flow: column;
 }
 
-.study-work__school, .study-work__work, .apresentation__personal, .community__article, .footer__position, .footer__order {
+.apresentation__personal, .community__article, .footer__position, .footer__order {
     align-items: center;
-}
-
-.study-work__school, .study-work__work {
-    justify-items: center;
 }
 
 .skills__card__block__division {
     flex-direction: column;
 }
 
-// COLORS
-
-.apresentation , .study-work {
-    background-color: $teal;
-}
-
-.study-work__school, .study-work__work, .study-work__card, .certificates__card, .skills__card, .projects-github, .projects-meehub, .projects-platform {
+.study-work__card, .certificates__card, .skills__card, .projects-github, .projects-meehub, .projects-platform {
     box-shadow: 0 10px 29px 0 $box-shadow-card;
 }
 
@@ -55,28 +50,16 @@ body {
     background-color: #ecf5ff;
 }
 
-header div h6 {
-    color: $white;
-}
-
 footer {
     background-color: #222331;
     color: $white;
 }
 
-nav ul li {
+ul li, li {
     list-style: none;
 }
 
-nav ul li a {
-    color: $white;
-    font-family: 'McLaren', cursive;
-    font-size: 12px;
-    text-decoration: none;
-}
-
-nav ul li a:hover {
-    color: black;
+a {
     text-decoration: none;
 }
 
@@ -88,7 +71,6 @@ h1 {
 }
     
 h2 {
-    color: black;
     font-family: 'Fredoka One', cursive;
     font-size: 27px;
     text-align: center;
@@ -112,20 +94,14 @@ h5 {
     font-size: 30px;
 }
     
-h6 {
-    font-family: 'Patrick Hand', cursive;
-    font-size: 20px;
-}
-    
 p {
     font-family: 'Patrick Hand', cursive;
     font-size: 19px;
     text-align: center;
+    line-height: 0.8;
 }
     
-a {
-    text-decoration: none;
-}
+// MEDIA QUERIES
 
 @media (max-width: 680px) {
 
@@ -146,395 +122,16 @@ a {
         font-size: 20px;
         text-align: center;
     }
-
-    h6 {
-        font-size: 18px;
-        text-align: justify;
-    }
-
-    nav ul li a {
-        font-size: 10px;
-    }
 }
 
 // HEADER
 
-.apresentation {
-    padding: 30px 0px 100px;
-
-    &__personal--image {
-        border-radius: 999rem;
-        height: 200px;
-        margin: 30px 70px;
-
-        &:hover {
-            -moz-transform: scale(1.1);
-	        -webkit-transform: scale(1.1);
-	        transform: scale(1.1);
-        }
-    }
-
-    &__list {
-        margin: 10px;
-    }
-
-    &__list li {
-        list-style: none;
-        text-decoration: none;
-    }
-
-    &__list li h2 {
-        color: white;
-    }
-
-    &__description {
-        padding: 30px 0px;
-    }
-}
+@import 'apresentation';
 
 // MAIN 
 
-// ARTICLE STUDY E WORK
-
-.study-work__card, .study-work__school, .study-work__work {
-    color: white;
-    margin: 10px;
-    border-radius: 8px;
-    width: 500px;
-}
-
-.study-work__school, .study-work__work {
-    background-color: white;
-    border: 1px solid #dadce0;
-    padding: 50px;
-}
-
-.study-work {
-    border-radius: 0px 0px 600px 600px;
-    padding: 0px 0px 100px;
-
-    &__card {
-        border: 1px solid #dadce0;
-        padding: 80px 40px;
-
-        &:hover {
-            background-color: white;
-            color: black;
-            transition: background-color 1s, color 1s;
-        }
-    }
-
-    &__space--img {
-        margin: 21px 0px;
-    }
-}
-
-@media (max-width: 680px) {
-    .study-work__school, .study-work__work {
-        display: none;
-    }
-
-    .study-work__card h3 {
-        font-size: 35px;
-    }
-
-    .study-work__card h4 {
-        font-size: 18px;
-    }
-}
-
-@media (min-width: 1350px) {
-
-    .study-work__block {
-        align-items: center;
-    }
-    
-    .study-work__card {
-        height: 410px;
-    }
-
-    .study-work__school, .study-work__work {
-        display: none;
-    }
-    
-}
-
-.enterprise {
-    align-items: center;
-    display: flex;
-    justify-content: space-around;
-    margin: 100px 0px 0px;
-
-    &__container {
-        display: flex;
-        align-items: center;
-    }
-}
-
-@media (max-width: 1350px) {
-
-    .enterprise {
-        display: none;
-    }
-    
-}
-
-// CERTIFICATIONS
-
-.certificates {
-    padding: 150px 0px 0px;
-}
-
-.certificates__card, .skills__card {
-    background-color: white;
-    border: 1px solid #dadce0;
-    border-radius: 8px;
-    margin: 10px;
-    padding: 40px;
-}
-
-.certificates__card {
-    width: 500px;
-}
-
-.skills {
-    padding: 150px 0px 150px;
-}
-
-.skills__card {
-    width: 80%;
-}
-
-.skills__card__block__division {
-    margin: 50px 0px;
-}
-
-@media (max-width: 680px) {
-
-    .skills__card {
-        width: 94%;
-    }
-
-    .skills__card__star {
-        width: 278px;
-    }
-}
-
-// PROJECTS
-
-.projects-github, .projects-meehub, .projects-platform {
-    color: white;
-    border: 1px solid #dadce0;
-    margin: 0px 0px 90px;
-    padding: 150px 0px;
-}
-
-.projects-github {
-    background-color: rebeccapurple;
-    border-radius: 0px 600px 600px 0px;
-}
-
-.github-project {
-    height: 130px;
-}
-
-.github-project:hover {
-    -moz-transform: scale(1.1);
-    -webkit-transform: scale(0.1);
-    transform: scale(0.9);
-    transition: 1s;
-}
-
-.projects-meehub {
-    background-color: rgb(218, 54, 54);
-    border-radius: 600px 0px 0px 600px;
-}
-
-.wordpress-project {
-    height: 160px;
-}
-
-.wordpress-project:hover {
-    -moz-transform: scale(1.1);
-    -webkit-transform: scale(0.1);
-    transform: scale(0.9);
-    transition: 1s;
-}
-
-.projects__content {
-    color: white;
-    margin: 50px 0px 0px;
-    padding-left: 34px;
-    padding-right: 34px;
-}
-
-.projects-platform {
-    background-color: rgba(218, 0, 121, 0.3);
-    border-radius: 0px 600px 600px 0px;
-}
-
-.projects__position__img-vtex-community {
-    height: 80px;
-    padding: 0px 60px;
-    margin: 30px 0 0;
-}
-
-.projects__position__img-mozilla-support {
-    height: 150px;
-    padding: 0px 60px;
-    margin: 30px 0 0;
-}
-
-@media (max-width: 680px) {
-
-    .projects-github, .projects-meehub, .projects-platform {
-        border-radius: 0px
-    }
-
-    .projects__content {
-        margin: 50px 30px 0px;
-    }
-
-    .projects__position__img-vtex-community {
-        height: 36px;
-    }
-    
-    .projects__position__img-mozilla-support {
-        height: 62px;
-    }
-}
-
-// COMMUNITY
-
-.community__block {
-    padding: 30px;
-}
-
-.community__representation {
-    padding: 0px 10px;
-}
-
-.community__logo {
-    border-radius: 999rem; 
-    height: 108px; 
-}
-
-.community__article__title{
-    font-family: 'Kanit', sans-serif;
-}
-
-.community__article__text{
-    font-family: 'Cantarell', sans-serif;
-}
-
-.img-wordpress-org{
-    height: 80px;
-}
-
-.block-link-wordpress-org {
-    margin: 20px;
-}
-
-@media (max-width: 680px) {
-
-    .community__block {
-        align-items: center;
-        flex-flow: column;
-        text-align: justify;
-    }
-}
-
-// VOLUNTARY
-
-.voluntary {
-    background-color: black;    
-}
-
-.white-font {
-    color: white;
-}
-
-.voluntary__container {
-    padding: 150px 0px;
-}
-
-.voluntary__container div h3 {
-    color: white;
-}
-
-.voluntary__article__event {
-    border: 1px solid rgb(0, 1, 2);
-}
-
-.card {
-    margin: 18px;
-}
-
-.card:hover {
-    /* border: 1px solid #f70303; */
-    -moz-transform: scale(1.1);
-	-webkit-transform: scale(1.1);
-    font-size: 10px;
-    transform: scale(1.1);
-    transition: 1s;
-}
+@import 'study-work', 'enterprise', 'certifications', 'skills', 'projects', 'community', 'voluntary';
 
 // FOOTER
 
-.footer__block {
-    padding: 70px 0px;
-}
-
-.footer__position a {
-    color: white;
-    text-decoration: none;
-}
-
-.footer__position__info{
-    font-family: 'Baloo', cursive;
-    font-size: 35px;
-}
-
-.img-cv {
-    height: 50px;
-    padding: 10px;
-}
-
-.footer__order__list {
-    margin: 40px 0 0 0;
-    padding: 0 15px;
-}
-
-.footer__order__list__logo {
-    border-radius: 999rem;
-    height: 35px;
-    transition: all 0.8s ease-in-out;
-}
-
-.footer__order__list__logo:hover {
-    transform: scale(1.2) rotate(360deg);
-}
-
-.dark-footer {
-    background-color: #171824;
-    padding: 15px;
-}
-
-.copyright {
-    font-size: 10px;
-}
-
-.img-heart-bit{
-    height: 25px;
-}
-
-@media (max-width: 680px) {
-
-    .footer__position__info {
-        font-size: 20px;
-    }  
-
-    .copyright {
-        font-size: 9px;
-    }  
-}
+@import 'footer';   

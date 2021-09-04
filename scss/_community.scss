@@ -1,0 +1,40 @@
+.community {
+
+    &__block {
+        padding: 30px;
+    }
+
+    &__representation {
+        padding: 0px 10px;
+    }
+
+    &__logo {
+        border-radius: 999rem; 
+        height: 108px; 
+    }
+
+    &__article--title{
+        font-family: $fontKanit;
+    }
+
+    &__article--text{
+        font-family: $fontCantarell;
+    }
+}
+
+.img-wordpress-org{
+    height: 80px;
+}
+
+.block-link-wordpress-org {
+    margin: 20px;
+}
+
+@media (max-width: 680px) {
+
+    .community__block {
+        align-items: center;
+        flex-flow: column;
+        text-align: justify;
+    }
+}

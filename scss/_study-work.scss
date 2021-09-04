@@ -1,0 +1,58 @@
+.study-work__card {
+    color: white;
+    margin: 10px;
+    border-radius: 8px;
+    width: 500px;
+}
+
+.study-work {
+    border-radius: 0px 0px 600px 600px;
+    padding: 0px 0px 100px;
+    background-color: $teal;
+
+    &__card {
+        border: 1px solid #dadce0;
+        padding: 80px 40px;
+
+        &:hover {
+            background-color: white;
+            color: black;
+            transition: background-color 1s, color 1s;
+        }
+    }
+
+    &__space--img {
+        margin: 21px 0px;
+    }
+}
+
+.study-work__card--spacing p {
+    line-height: 0.8;
+}
+
+.study-work__card--block {
+    padding-bottom: 30px;
+}
+
+@media (max-width: 680px) {
+
+    .study-work__card h3 {
+        font-size: 35px;
+    }
+
+    .study-work__card h4 {
+        font-size: 18px;
+    }
+}
+
+@media (min-width: 1350px) {
+
+    .study-work__block {
+        align-items: center;
+    }
+    
+    .study-work__card {
+        height: 410px;
+    }
+    
+}
