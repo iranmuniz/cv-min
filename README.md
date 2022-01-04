@@ -24,4 +24,8 @@ padrão curricular em regras ABNT</p>
 
 > Me formei na Universidade Universidade de São Paulo - UNICID.
 
+
+### Rodar SASS
+sass --watch style.scss:style.css
+
 :heartbeat: Paixão por Desenvolver :heartbeat:
